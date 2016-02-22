@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'backend-api'
     },
-    port: process.env.PORT || 80,
+    port: process.env.PORT || 3000,
     secret : "gregsmartdoctorapp",
     db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
 
@@ -20,7 +20,7 @@ var config = {
     app: {
       name: 'backend-api'
     },
-    port: process.env.PORT || 80,
+    port: process.env.PORT || 3000,
     secret : "gregsmartdoctorapp",
     db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
   },
@@ -30,7 +30,7 @@ var config = {
     app: {
       name: 'backend-api'
     },
-    port: process.env.PORT || 80,
+    port: process.env.PORT || 3000,
     secret : "gregsmartdoctorapp",
     db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
   }
