@@ -10,7 +10,8 @@ var config = {
     },
     port: process.env.PORT || 80,
     secret : "gregsmartdoctorapp",
-    db: 'mongodb://Admin:500more@localhost:27017/hospital-database'
+    db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
+
 
   },
 
@@ -21,7 +22,7 @@ var config = {
     },
     port: process.env.PORT || 80,
     secret : "gregsmartdoctorapp",
-    db: 'mongodb://Admin:500more@localhost:27017/hospital-database'
+    db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
   },
 
   production: {
@@ -31,7 +32,7 @@ var config = {
     },
     port: process.env.PORT || 80,
     secret : "gregsmartdoctorapp",
-    db: 'mongodb://Admin:500more@localhost:27017/hospital-database'
+    db: 'mongodb://Admin:500more@ds027483.mongolab.com:27483/doctor-database'
   }
 };
 
