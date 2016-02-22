@@ -1,0 +1,13 @@
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+Server is running at 80
+[0mGET / [36m304 [0m20.465 ms - -[0m
+USER connectedVZWmoaaCGZhaULNqAAAA
+USER connecteddg9eYjyL9Fr0Yt4LAAAB
+----------- user_online -------------
+userEmail-------greg@500more.com
+Pending messages retrieved successfully
+user_online method is called
+Client disconnected (id=VZWmoaaCGZhaULNqAAAA).
+Success!undefined is disconnected from db as well
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? 

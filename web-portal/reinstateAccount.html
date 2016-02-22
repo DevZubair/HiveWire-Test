@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reinstate User</title>
+  <!-- BOOTSTRAP STYLES-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLES-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CUSTOM STYLES-->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+
+  <!-- GOOGLE FONTS-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/jqueryLoader.js"></script>
+</head>
+
+<body style="overflow: scroll">
+<div id="wrapper">
+  <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Hospital App</a>
+    </div>
+    <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;"> Last access : <i id="lastLoginID"></i>&nbsp; <a href="/admin" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+  </nav>
+  <!-- /. NAV TOP  -->
+  <nav class="navbar-default navbar-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav" id="main-menu">
+        <li class="text-center">
+          <img src="images/find_user.png" class="user-image img-responsive"/>
+        </li>
+        <li>
+          <a href="/admin/dashboard"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+        </li>
+        <li>
+          <a  href="/admin/messageAll"><i class="fa fa-file-text-o fa-3x"></i> Message All</a>
+        </li>
+        <li>
+          <a href="/admin/suspendUser"><i class="fa fa-lock fa-3x"></i> Suspend Account</a>
+        </li>
+        <li>
+          <a class="active-menu" href="/admin/reinstateUser"><i class="fa fa-unlock fa-3x"></i> Reinstate Account</a>
+        </li>
+        <li  >
+          <a  href="/admin/newUsers"><i class="fa fa-users fa-3x"></i> New Users</a>
+        </li>
+        <li>
+          <a href="/admin/otherUsers"><i class="fa fa-person fa-3x"></i> Other Users</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /. NAV SIDE  -->
+  <div id="page-wrapper" >
+    <div id="page-inner">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 style="display: inline">Reinstate Account</h2>
+          <i id="refreshContacts" class="fa fa-refresh" style="margin-left: 2%; font-size: 2em"></i>
+          <h4>Welcome Admin , unblock users here. </h4>
+        </div>
+      </div>
+      <hr/>
+
+      <ol id="listOfUsers" class="rounded-list">
+
+      </ol>
+
+      <hr/>
+    </div>
+  </div>
+</div>
+<div id="dialog-confirm-reinstate" title="Block User?">
+ <!-- <p><span class="fa fa-unlock" style="float:left; margin:0 7px 20px 0;"></span>This user will be unblocked and can use the account. Are you sure?</p>-->
+</div>
+<script src="js/reinstateUser.js"></script>
+</body>
+</html>
