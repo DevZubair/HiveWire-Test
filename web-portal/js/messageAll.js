@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 });
 
-var _domain = "http://hivewire1.cloudapp.net/",
+var _domain = "http://hivewiretest.azurewebsites.net/",
   _emailAddress = localStorage.getItem("emailAddress"),
   _token = localStorage.getItem("sessionToken");
 

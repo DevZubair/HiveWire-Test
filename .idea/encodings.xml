@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/web-portal/js/dashboard.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/loginFunction.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/messageAll.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/newUsers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/otherUser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/reinstateUser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/suspendUser.js" charset="UTF-8" />
+  </component>
+</project>

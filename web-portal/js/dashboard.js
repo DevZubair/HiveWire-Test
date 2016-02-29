@@ -14,7 +14,7 @@ $(document).ready(function() {
   $('#lastLoginID').html(inputvalue.getDate() + '/' + (inputvalue.getMonth()+1) + '/' + inputvalue.getFullYear() + ' ' + inputvalue.getHours() + ':' + inputvalue.getMinutes() + ':' + inputvalue.getSeconds());
 });
 
-var _domain = "http://hivewire1.cloudapp.net/",
+var _domain = "http://hivewiretest.azurewebsites.net/",
   _emailAddress = localStorage.getItem("emailAddress"),
   _token = localStorage.getItem("sessionToken");
 

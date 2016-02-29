@@ -1,5 +1,5 @@
 localStorage.clear();
-var _domain = "http://hivewire1.cloudapp.net/";
+var _domain = "http://hivewiretest.azurewebsites.net/";
 
 function loginSubmit() {
   $(document).ready(function() {
