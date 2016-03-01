@@ -14,7 +14,7 @@ router.post('/register', function (req, res, next) {
   var _registrationData = req.body,
     _time = new Date(),
     _randomNumber = '',
-    _possibleValues = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()abcdefghijklmnopqrstuvwxyz' + _time.getTime(),
+    _possibleValues = '23456789ABCDEFGHJKMNPQRSTUVWXYZ@#$%^&*()abcdefghjkmnopqrstuvwxyz' + _time.getTime(),
     _noreplyEmail= 'gregdoctorapp@yahoo.com',
     _userEmail = _registrationData.emailAddress;
 
