@@ -5,16 +5,16 @@ var express = require('express'),
   Registration = mongoose.model('Registration');
 
 module.exports = function (app) {
-  app.use('/', router);
+  app.use('/admin', router);
 };
 
-router.post('/forgotPin', function (req, res, next) {
+router.post('/sendVerifyCode', function (req, res, next) {
 
   var _forgotPinEmail = req.body.emailAddress,
     _time = new Date(),
     _randomNumber = '',
-    _possibleValues = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()abcdefghijklmnopqrstuvwxyz' + _time.getTime(),
-    _noreplyEmail= 'gregdoctorapp@yahoo.com';
+    _possibleValues = '23456789ABCDEFGHJKMNPQRSTUVWXYZ!@#$%^&*()abcdefghjkmnpqrstuvwxyz' + _time.getTime(),
+    _noreplyEmail= 'hivewiretest@gmail.com';
 
   if(_forgotPinEmail)
   {
@@ -25,20 +25,20 @@ router.post('/forgotPin', function (req, res, next) {
     }
 
     var smtpTransport = nodemailer.createTransport("SMTP",{
-      service: "GMAIL",
+      service: "gmail",
       auth: {
-        user: "gregdoctorapp@gmail.com",
-        pass: "world@123456"
+        user: "hivewiretest@gmail.com",
+        pass: "h1vew1re"
       }
     });
 
     // setup e-mail data with unicode symbols
     var mailOptions = {
       from: _noreplyEmail, // sender address
-      to:  _forgotPinEmail, // list of receivers
-      subject: "Verification Code", // Subject line
+      to:  "fly_zubair@hotmail.com", // list of receivers
+      subject: "Change Password Request", // Subject line
       text: "Verification Code", // plaintext body
-      html: '<h3>Please insert the following Code to verify '+ '<a href="#">' + _randomNumber + '</a>' +' </h3>'
+      html: '<h3>Please insert the following Code to verify for changing password '+ '<a href="#">' + _randomNumber + '</a>' +' </h3>'
     };
 
     Registration.findOne({emailAddress:_forgotPinEmail},function(err,data) {
@@ -50,45 +50,35 @@ router.post('/forgotPin', function (req, res, next) {
           msg : 'API not called properly'
         });
       }
-      else if(data!=''){
+      else if(data!=null){
 
-        if(data.isVerified == true){
-          smtpTransport.sendMail(mailOptions, function(error, response){
-            if(error){
-              console.log(error);
-              res.send({
-                code : 503,
-                content : 'Service Unavailable',
-                msg : 'Error while email sent'
-              });
-            }
-            else{
-              console.log("Message sent: " + response.message);
+        smtpTransport.sendMail(mailOptions, function(error, response){
+          if(error){
+            console.log(error);
+            res.send({
+              code : 503,
+              content : 'Service Unavailable',
+              msg : 'Error while email sent'
+            });
+          }
+          else{
+            console.log("Message sent: " + response.message);
+
+            Registration.update({"emailAddress":_forgotPinEmail},{
+
+              "verificationCode" : _randomNumber
+
+            },function(){
               res.send({
                 code : 200,
                 content : 'OK',
                 msg : 'Verification Email Sent'
               });
-              Registration.update({"emailAddress":_forgotPinEmail},{
-
-                "isVerified" : false,
-                "verificationCode" : _randomNumber,
-                "pinCode" : "NULL"
-
-              },function(){
-
-              });
-            }
-          });
-        }
-        else{
-          res.send({
-            code : 404 ,
-            content : 'Not Found',
-            msg : 'Wrong code, user not Verified'
-          });
-        }
+            });
+          }
+        });
       }
+
       else{
         res.send({
           code : 404 ,

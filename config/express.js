@@ -53,6 +53,21 @@ module.exports = function(app, config) {
   controllers43.forEach(function (controller) {
     require(controller)(app);
   });
+  var controllers45 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminChangePasscode.js');
+
+  controllers45.forEach(function (controller) {
+    require(controller)(app);
+  });
+  var controllers46 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminChangePassAPI.js');
+
+  controllers46.forEach(function (controller) {
+    require(controller)(app);
+  });
+  var controllers47 = glob.sync(config.root + '/app/controllers/AdminAPIs/sendVerifyCodeAPI.js');
+
+  controllers47.forEach(function (controller) {
+    require(controller)(app);
+  });
   var controllers35 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminReinstateUser.js');
 
   controllers35.forEach(function (controller) {

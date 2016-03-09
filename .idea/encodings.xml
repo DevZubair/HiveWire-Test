@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminChangePassAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/sendVerifyCodeAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/forgotPinAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/registrationAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/verifyEmailAgainAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/registrationAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/express.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-portal/js/changePasscode.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/dashboard.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/loginFunction.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/messageAll.js" charset="UTF-8" />

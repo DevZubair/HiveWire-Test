@@ -14,7 +14,7 @@ router.post('/forgotPin', function (req, res, next) {
   var _forgotPinEmail = req.body.emailAddress,
     _time = new Date(),
     _randomNumber = '',
-    _possibleValues = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()abcdefghijklmnopqrstuvwxyz' + _time.getTime(),
+    _possibleValues = '23456789ABCDEFGHJKMNPQRSTUVWXYZ!@#$%^&*()abcdefghjkmnpqrstuvwxyz' + _time.getTime(),
     _noreplyEmail= 'hivewiretest@gmail.com';
 
   if(_forgotPinEmail)

@@ -16,7 +16,7 @@ router.post('/register', function (req, res, next) {
   var _registrationData = req.body,
     _time = new Date(),
     _randomNumber = '',
-    _possibleValues = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()abcdefghijklmnopqrstuvwxyz' + _time.getTime(),
+    _possibleValues = '23456789ABCDEFGHJKMNPQRSTUVWXYZ@#$%^&*()abcdefghjkmnpqrstuvwxyz' + _time.getTime(),
     _noreplyEmail= 'hivewiretest@gmail.com',
     _userEmail = _registrationData.emailAddress,
     _deviceID = _registrationData.deviceID,
