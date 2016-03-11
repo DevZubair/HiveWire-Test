@@ -68,6 +68,7 @@ module.exports = function(app, config) {
   controllers47.forEach(function (controller) {
     require(controller)(app);
   });
+
   var controllers35 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminReinstateUser.js');
 
   controllers35.forEach(function (controller) {
@@ -82,6 +83,11 @@ module.exports = function(app, config) {
   var controllers26 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminDashboard.js');
 
   controllers26.forEach(function (controller) {
+    require(controller)(app);
+  });
+  var controllers50 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminUsersCode.js');
+
+  controllers50.forEach(function (controller) {
     require(controller)(app);
   });
 
@@ -227,6 +233,11 @@ module.exports = function(app, config) {
   controllers22.forEach(function (controller) {
     require(controller)(app);
   });
+  var controllers48 = glob.sync(config.root + '/app/controllers/UsersAPIs/getGroupUsersAPI.js');
+
+  controllers48.forEach(function (controller) {
+    require(controller)(app);
+  });
 
   var controllers30 = glob.sync(config.root + '/app/controllers/AdminAPIs/suspendAccountAPI.js');
 
@@ -273,7 +284,11 @@ module.exports = function(app, config) {
   controllers44.forEach(function (controller) {
     require(controller)(app);
   });
+  var controllers49 = glob.sync(config.root + '/app/controllers/AdminAPIs/retrieveUsersCodeAPI.js');
 
+  controllers49.forEach(function (controller) {
+    require(controller)(app);
+  });
 
   app.use(function (req, res, next) {
     var err = new Error('Not Found');

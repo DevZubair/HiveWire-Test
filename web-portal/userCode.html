@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reinstate User</title>
+  <title>Other Users</title>
   <!-- BOOTSTRAP STYLES-->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
@@ -53,16 +53,16 @@ font-size: 16px;"> Last access : <i id="lastLoginID"></i>&nbsp; <a href="/admin"
           <a href="/admin/suspendUser"><i class="fa fa-lock fa-3x"></i> Suspend Account</a>
         </li>
         <li>
-          <a class="active-menu" href="/admin/reinstateUser"><i class="fa fa-unlock fa-3x"></i> Reinstate Account</a>
+          <a href="/admin/reinstateUser"><i class="fa fa-unlock fa-3x"></i> Reinstate Account</a>
         </li>
-        <li  >
-          <a  href="/admin/newUsers"><i class="fa fa-users fa-3x"></i> New Users</a>
+        <li>
+          <a href="/admin/newUsers"><i class="fa fa-users fa-3x"></i> New Users</a>
         </li>
         <li>
           <a href="/admin/otherUsers"><i class="fa fa-person fa-3x"></i> Other Users</a>
         </li>
         <li>
-          <a href="/admin/UsersCode"><i class="fa fa-lock fa-3x"></i> Users Code</a>
+          <a class="active-menu" href="/admin/UsersCode"><i class="fa fa-lock fa-3x"></i> Users Code</a>
         </li>
       </ul>
     </div>
@@ -72,9 +72,9 @@ font-size: 16px;"> Last access : <i id="lastLoginID"></i>&nbsp; <a href="/admin"
     <div id="page-inner">
       <div class="row">
         <div class="col-md-12">
-          <h2 style="display: inline">Reinstate Account</h2>
+          <h2 style="display: inline">Users Verify Code</h2>
           <i id="refreshContacts" class="fa fa-refresh" style="margin-left: 2%; font-size: 2em"></i>
-          <h4>Welcome Admin , unblock users here. </h4>
+          <h4>Welcome Admin , all users verify code are here. </h4>
         </div>
       </div>
       <hr/>
@@ -87,9 +87,9 @@ font-size: 16px;"> Last access : <i id="lastLoginID"></i>&nbsp; <a href="/admin"
     </div>
   </div>
 </div>
-<div id="dialog-confirm-reinstate" title="Block User?">
- <!-- <p><span class="fa fa-unlock" style="float:left; margin:0 7px 20px 0;"></span>This user will be unblocked and can use the account. Are you sure?</p>-->
-</div>
-<script src="js/reinstateUser.js"></script>
+<!--<div id="dialog-confirm-reinstate" title="Block User?"></div>-->
+<!-- <p><span class="fa fa-unlock" style="float:left; margin:0 7px 20px 0;"></span>This user will be unblocked and can use the account. Are you sure?</p>-->
+
+<script src="js/usersCode.js"></script>
 </body>
 </html>
