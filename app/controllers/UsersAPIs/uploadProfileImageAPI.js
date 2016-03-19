@@ -39,7 +39,7 @@ router.post('/uploadProfileImage', function (req, res, next) {
           _fstream = fs.createWriteStream("images/profile_pic/" +_emailAddress+ '/' + filename);
           file.pipe(_fstream);
           _fstream.on('close', function () {
-            var _imageURL = 'http://hivewire1.cloudapp.net/getProfileImage/?imageName=' + filename + '&emailAddress=' + _emailAddress;
+            var _imageURL = 'http://hivewiretest.azurewebsites.net/getProfileImage/?imageName=' + filename + '&emailAddress=' + _emailAddress;
             //update the image in db
             Registration.findOne({emailAddress: _encryptEmailAddress}, function (err, data) {
 

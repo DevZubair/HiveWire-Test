@@ -39,7 +39,7 @@ if(_conversationID != undefined) {
 
           //update the image in db
           var uniqueID = mongoose.Types.ObjectId();
-          var _imageURL = 'http://hivewire1.cloudapp.net/getRoomImage/?conversationID=' + _conversationID + "&imageName=" + filename;
+          var _imageURL = 'http://hivewiretest.azurewebsites.net/getRoomImage/?conversationID=' + _conversationID + "&imageName=" + filename;
           mongoose.model('Conversation_Room').update({_id: _conversationID},
             {
               $push: {
