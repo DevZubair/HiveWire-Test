@@ -97,7 +97,8 @@ io.on('connection', function (socket) {
             conversationID: conversationID,
             dateTime: currentDate,
             roomName: Room.RoomName,
-            roomUsers: Room.Users
+            roomUsers: Room.Users,
+            offlineMessageId : data.offlineMessageId
           });
         }
 
