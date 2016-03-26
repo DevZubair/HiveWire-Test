@@ -2,14 +2,17 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/addProfileListAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminChangePassAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminUsersCode.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/retrieveUsersCodeAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/sendVerifyCodeAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/updateProfileListAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/forgotPinAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/getGroupUsersAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/registrationAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/verifyEmailAgainAPI.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/models/profileListSchema.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/express.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/changePasscode.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/dashboard.js" charset="UTF-8" />

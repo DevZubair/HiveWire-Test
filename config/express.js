@@ -48,6 +48,11 @@ module.exports = function(app, config) {
   controllers31.forEach(function (controller) {
     require(controller)(app);
   });
+  var controllers51 = glob.sync(config.root + '/app/controllers/AdminAPIs/updateProfileListAPI.js');
+
+  controllers51.forEach(function (controller) {
+    require(controller)(app);
+  });
   var controllers43 = glob.sync(config.root + '/app/controllers/AdminAPIs/adminOtherUsers.js');
 
   controllers43.forEach(function (controller) {
