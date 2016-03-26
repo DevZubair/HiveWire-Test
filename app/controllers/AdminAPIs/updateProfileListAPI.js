@@ -10,13 +10,14 @@ module.exports = function (app) {
 router.post('/updateProfileList', function (req, res, next) {
 
   var _profileC = req.body.profileCateg,
+    _profileName = req.body.profileItem,
     profileMake = req.body.profileMake;
 
   if (_profileC == 'hospitalName') {
 
     ProfileList.update({}, {
       $push: {
-        hospitalName: []
+        hospitalName: _profileName
 
       },
       updated_at: new Date()
@@ -41,7 +42,7 @@ router.post('/updateProfileList', function (req, res, next) {
   else if(_profileC == 'grade'){
     ProfileList.update({}, {
       $push: {
-        grade: []
+        grade: _profileName
 
       },
       updated_at: new Date()
@@ -66,7 +67,7 @@ router.post('/updateProfileList', function (req, res, next) {
   else if(_profileC == 'speciality'){
     ProfileList.update({}, {
       $push: {
-        speciality: []
+        speciality: _profileName
 
       },
       updated_at: new Date()
@@ -91,7 +92,7 @@ router.post('/updateProfileList', function (req, res, next) {
   else if(_profileC == 'role'){
     ProfileList.update({}, {
       $push: {
-        role: []
+        role: _profileName
 
       },
       updated_at: new Date()
@@ -116,7 +117,7 @@ router.post('/updateProfileList', function (req, res, next) {
   else if(_profileC == 'job'){
     ProfileList.update({}, {
       $push: {
-        job: []
+        job: _profileName
 
       },
       updated_at: new Date()
@@ -141,7 +142,7 @@ router.post('/updateProfileList', function (req, res, next) {
   else if(_profileC == 'ward'){
     ProfileList.update({}, {
       $push: {
-        ward: []
+        ward: _profileName
 
       },
       updated_at: new Date()
