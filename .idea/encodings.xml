@@ -4,9 +4,9 @@
     <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminChangePassAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminUsersCode.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/getProfileJobsAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/retrieveUsersCodeAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/sendVerifyCodeAPI.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/updateProfileListAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/forgotPinAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/getGroupUsersAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/registrationAPI.js" charset="UTF-8" />

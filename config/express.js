@@ -48,7 +48,7 @@ module.exports = function(app, config) {
   controllers31.forEach(function (controller) {
     require(controller)(app);
   });
-  var controllers51 = glob.sync(config.root + '/app/controllers/AdminAPIs/updateProfileListAPI.js');
+  var controllers51 = glob.sync(config.root + '/app/controllers/AdminAPIs/getProfileJobsAPI.js');
 
   controllers51.forEach(function (controller) {
     require(controller)(app);
