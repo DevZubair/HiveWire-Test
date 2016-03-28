@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminChangePassAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/adminUsersCode.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/getProfileHospitalAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/getProfileJobsAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/retrieveUsersCodeAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/AdminAPIs/sendVerifyCodeAPI.js" charset="UTF-8" />
