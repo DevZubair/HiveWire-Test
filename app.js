@@ -98,7 +98,8 @@ io.on('connection', function (socket) {
             dateTime: currentDate,
             roomName: Room.RoomName,
             roomUsers: Room.Users,
-            offlineMessageId : data.offlineMessageId
+            offlineMessageId : data.offlineMessageId,
+            offlineTime : data.offlineTime
           });
         }
 
