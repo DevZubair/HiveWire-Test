@@ -248,6 +248,11 @@ module.exports = function(app, config) {
   controllers48.forEach(function (controller) {
     require(controller)(app);
   });
+  var controllers53 = glob.sync(config.root + '/app/controllers/UsersAPIs/updateGroupNameAPI.js');
+
+  controllers53.forEach(function (controller) {
+    require(controller)(app);
+  });
 
   var controllers30 = glob.sync(config.root + '/app/controllers/AdminAPIs/suspendAccountAPI.js');
 
