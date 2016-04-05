@@ -14,6 +14,7 @@
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/updateGroupNameAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/controllers/UsersAPIs/verifyEmailAgainAPI.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/models/profileListSchema.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/users-functions/push-notification-function.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/express.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/changePasscode.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-portal/js/dashboard.js" charset="UTF-8" />

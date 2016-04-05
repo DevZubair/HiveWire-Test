@@ -76,6 +76,7 @@ exports.sendPushes = function (usersID,notificationMessage,senderEmail,conversat
       var _encryptEmailAddress = userEmail.content;
 
       message.addNotification('tag', "Hivewire");   //For Android
+      message.addNotification('roomID', conversationID);   //For Android
 
       mongoose.model('Registration').find({emailAddress: _encryptEmailAddress}, function (err, userData) {
         if (err) {
