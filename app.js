@@ -380,6 +380,66 @@ io.on('connection', function (socket) {
       })
     });
   });
+
+  socket.on('leaveGroup', function (data) {
+    var clients = io.sockets.sockets;
+    for (var k in clients) {
+      // we tell the client to execute 'new message'
+      if (data.roomUsers.indexOf(clients[k].emailAddress) >= 0) {
+        console.log('Socket message response to all users that' + data.userEmail + 'left a group');
+
+        io.sockets.connected[clients[k].id].emit('leaveGroup', {
+          userEmail: data.userEmail,
+          conversationID: data.conversationID,
+          dateTime: new Date(),
+          roomName: data.roomName
+        });
+      }
+
+      else {
+
+      }
+    }
+  });
+  socket.on('userAdded', function (data) {
+    var clients = io.sockets.sockets;
+    for (var k in clients) {
+      // we tell the client to execute 'new message'
+      if (data.roomUsers.indexOf(clients[k].emailAddress) >= 0) {
+        console.log('Socket message response to all users that' + data.userEmail + 'joined a group');
+
+        io.sockets.connected[clients[k].id].emit('userAdded', {
+          userEmail: data.userEmail,
+          conversationID: data.conversationID,
+          dateTime: new Date(),
+          roomName: data.roomName
+        });
+      }
+
+      else {
+
+      }
+    }
+  });
+  socket.on('groupNameEdit', function (data) {
+    var clients = io.sockets.sockets;
+    for (var k in clients) {
+      // we tell the client to execute 'new message'
+      if (data.roomUsers.indexOf(clients[k].emailAddress) >= 0) {
+        console.log('Socket message response to all users that' + data.roomName + 'is a group name now');
+
+        io.sockets.connected[clients[k].id].emit('groupNameEdit', {
+          conversationID: data.conversationID,
+          dateTime: new Date(),
+          roomName: data.roomName
+        });
+      }
+
+      else {
+
+      }
+    }
+  })
 });
 //app.listen(config.port);
 console.log('Server is running at ' + config.port);
