@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51331210-8a8b-4bb6-9dc5-5a93effddc04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-    </list>
+    <list default="true" id="51331210-8a8b-4bb6-9dc5-5a93effddc04" name="Default" comment="" />
     <ignored path="Test-Hivewire.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4178082">
-              <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
               <folding>
                 <element signature="e#6133#6669#0" expanded="false" />
                 <element signature="e#6782#7327#0" expanded="false" />
@@ -40,6 +38,7 @@
                 <element signature="e#11712#12246#0" expanded="false" />
                 <element signature="e#12292#12848#0" expanded="false" />
                 <element signature="e#12892#13449#0" expanded="false" />
+                <element signature="e#13497#14025#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -279,7 +278,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24925596" sideWeight="0.49148935" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,7 +676,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4178082">
-          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
           <folding>
             <element signature="e#6133#6669#0" expanded="false" />
             <element signature="e#6782#7327#0" expanded="false" />
@@ -690,6 +689,7 @@
             <element signature="e#11712#12246#0" expanded="false" />
             <element signature="e#12292#12848#0" expanded="false" />
             <element signature="e#12892#13449#0" expanded="false" />
+            <element signature="e#13497#14025#0" expanded="false" />
           </folding>
         </state>
       </provider>
