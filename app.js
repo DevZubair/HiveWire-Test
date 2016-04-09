@@ -431,6 +431,7 @@ io.on('connection', function (socket) {
         console.log('Socket message response to all users that' + data.roomName + 'is a group name now');
 
         io.sockets.connected[clients[k].id].emit('groupNameEdit', {
+          userEmail: data.userEmail,
           conversationID: data.conversationID,
           dateTime: new Date(),
           roomName: data.roomName,
