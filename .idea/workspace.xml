@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51331210-8a8b-4bb6-9dc5-5a93effddc04" name="Default" comment="" />
+    <list default="true" id="51331210-8a8b-4bb6-9dc5-5a93effddc04" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Test-Hivewire.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4178082">
-              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5">
+              <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
               <folding>
                 <element signature="e#6133#6669#0" expanded="false" />
                 <element signature="e#6782#7327#0" expanded="false" />
@@ -36,9 +39,7 @@
                 <element signature="e#9436#10481#0" expanded="false" />
                 <element signature="e#10539#11644#0" expanded="false" />
                 <element signature="e#11712#12246#0" expanded="false" />
-                <element signature="e#12292#12848#0" expanded="false" />
-                <element signature="e#12892#13449#0" expanded="false" />
-                <element signature="e#13497#14025#0" expanded="false" />
+                <element signature="e#12292#12886#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -137,8 +138,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,6 +204,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,7 +314,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -649,14 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/users-functions/message-seen-function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UsersAPIs/uploadRoomImageAPI.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55308217">
@@ -673,10 +666,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/users-functions/message-seen-function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14554794">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4178082">
-          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
           <folding>
             <element signature="e#6133#6669#0" expanded="false" />
             <element signature="e#6782#7327#0" expanded="false" />
@@ -687,9 +688,7 @@
             <element signature="e#9436#10481#0" expanded="false" />
             <element signature="e#10539#11644#0" expanded="false" />
             <element signature="e#11712#12246#0" expanded="false" />
-            <element signature="e#12292#12848#0" expanded="false" />
-            <element signature="e#12892#13449#0" expanded="false" />
-            <element signature="e#13497#14025#0" expanded="false" />
+            <element signature="e#12292#12886#0" expanded="false" />
           </folding>
         </state>
       </provider>

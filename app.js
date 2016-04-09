@@ -392,7 +392,8 @@ io.on('connection', function (socket) {
           userEmail: data.userEmail,
           conversationID: data.conversationID,
           dateTime: new Date(),
-          roomName: data.roomName
+          roomName: data.roomName,
+          roomUsers : data.roomUsers
         });
       }
 
@@ -412,7 +413,8 @@ io.on('connection', function (socket) {
           userEmail: data.userEmail,
           conversationID: data.conversationID,
           dateTime: new Date(),
-          roomName: data.roomName
+          roomName: data.roomName,
+          roomUsers : data.roomUsers
         });
       }
 
@@ -431,7 +433,8 @@ io.on('connection', function (socket) {
         io.sockets.connected[clients[k].id].emit('groupNameEdit', {
           conversationID: data.conversationID,
           dateTime: new Date(),
-          roomName: data.roomName
+          roomName: data.roomName,
+          roomUsers : data.roomUsers
         });
       }
 
